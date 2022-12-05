@@ -1,0 +1,40 @@
+/* Соцмережі під фото */
+.work-con-icon {
+  fill: var(--fill-icon-color);
+}
+
+.employees-network-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.employees-soc-item {
+  width: 44px;
+  height: 44px;
+}
+
+.employees-soc-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: var(--secondary-accent-color);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
+    
+  &:hover, & :focus {
+    background: var(--accent-color);
+    }
+}
+
+.employees-soc-link .work-con-icon {
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+
+.employees-soc-link:hover .work-con-icon,
+.employees-soc-link:focus .work-con-icon {
+  fill: var(--secondary-accent-color);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+}
